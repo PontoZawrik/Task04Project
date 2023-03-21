@@ -43,6 +43,5 @@ int task01(int a, int b, int c) {
 	a % 2 == 1 ? a++ : a;
 	b % 2 == 1 ? b++ : b;
 	c % 2 == 1 ? c++ : c;
-	cout << (a / 2) + (b / 2) + (c / 2) << endl;
 	return (a / 2) + (b / 2) + (c / 2);
 } 
