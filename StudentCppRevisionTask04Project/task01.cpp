@@ -40,6 +40,9 @@ int task01(int a, int b, int c) {
 	if (a <= 0 || b <= 0 || c <= 0) {
 		return 0;
 	}
-	a % 2 == 1 ? a++ : b % 2 == 1 ? b++ : c % 2 == 1 ? c++ : c;
-	return a / 2 + b / 2 + c / 2;
+	a % 2 == 1 ? a++ : a;
+	b % 2 == 1 ? b++ : b;
+	c % 2 == 1 ? c++ : c;
+	cout << (a / 2) + (b / 2) + (c / 2) << endl;
+	return (a / 2) + (b / 2) + (c / 2);
 } 
