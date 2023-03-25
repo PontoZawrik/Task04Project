@@ -39,13 +39,7 @@ string task02(int number) {
 		return "error";
 	}
 	int t = number / 60;
-	cout << to_string(t / 60) + ":" 
-		+ (t % 60 >= 10 ? to_string(t % 60 / 10) + to_string(t % 60 % 10) : "0" + to_string(t % 60)) + ":" 
-		+ (number % 60 >= 10 ? to_string(number % 60 / 10) + to_string(number % 60 % 10) : "0" + to_string(number % 60)) << endl;
-	return to_string(t / 60) + ":"
+	return ((t / 60) > 24 ? to_string(t / 60 - 24) : to_string(t / 60)) + ":"
 		+ (t % 60 >= 10 ? to_string(t % 60 / 10) + to_string(t % 60 % 10) : "0" + to_string(t % 60)) + ":"
 		+ (number % 60 >= 10 ? to_string(number % 60 / 10) + to_string(number % 60 % 10) : "0" + to_string(number % 60));
-
-	//[input 2]: 129700			129700 секунд = 36:01:40
-	//[output 2] : 12 : 01 : 40
 }
